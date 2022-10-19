@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Cards from "./Cards";
 import Header from "./Header";
 import Search from "./Search";
 import Global from "./styles/global";
@@ -10,7 +10,7 @@ const App = () => {
       <Global />
       <Header />
       <Search />
-      <Card />
+      <Cards />
     </>
   );
 };

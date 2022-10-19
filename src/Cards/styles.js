@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 3rem;
   row-gap: 2rem;
   margin: 1rem 2rem;
 `;
@@ -22,13 +22,13 @@ export const CardContent = styled.div`
   margin: 0.2rem 1.4rem;
 `;
 
-export const CardArea = styled.div`
+export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 458px;
-  max-width: 345px;
+  max-height: 520px;
+  max-width: 450px;
   border: 2px solid #d77601;
   border-radius: 12px;
   padding: 0.9rem;
@@ -36,8 +36,7 @@ export const CardArea = styled.div`
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
   img {
-    height: 170px;
-    width: 250px;
+    height: 130px;
     padding: 0.8rem;
   }
 `;
