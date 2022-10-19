@@ -6,7 +6,7 @@ export const Busca = styled.div`
   padding: 1.6rem;
 
   input {
-    width: 500px;
+    width: 600px;
     border-radius: 16px;
     border: 2px solid #d77601;
     padding: 0.3rem;
