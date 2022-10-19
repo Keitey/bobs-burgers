@@ -1,24 +1,25 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 3rem;
-    row-gap: 4rem;
-    margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 6rem;
+  row-gap: 2rem;
+  margin: 1rem 2rem;
 `;
 
 export const Title = styled.h3`
   background: #ff9933;
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin: auto;
   border-radius: 2px;
 `;
 
 export const CardContent = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 0.2rem 1.4rem;
 `;
 
 export const CardArea = styled.div`
@@ -26,11 +27,13 @@ export const CardArea = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 442px;
+  height: 458px;
   max-width: 345px;
   border: 2px solid #d77601;
   border-radius: 12px;
-  padding: .9rem;
+  padding: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
   img {
     height: 170px;
