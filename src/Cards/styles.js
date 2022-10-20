@@ -6,6 +6,7 @@ export const CardContainer = styled.div`
   column-gap: 3rem;
   row-gap: 2rem;
   margin: 1rem 2rem;
+  padding-bottom: 3rem;
 `;
 
 export const Title = styled.h3`
