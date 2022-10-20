@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Search from "../Search";
+import Pagination from '../Pagination'
 import * as C from "./styles";
 
 const Card = () => {
@@ -45,6 +46,7 @@ const Card = () => {
           );
         })}
       </C.CardContainer>
+      <Pagination />
     </>
   );
 };
