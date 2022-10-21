@@ -41,3 +41,43 @@ export const Content = styled.div`
     padding: 0.8rem;
   }
 `;
+
+export const Container = styled.div`
+  .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #ff9933;
+    color: #ff9933;
+    cursor: pointer;
+  }
+
+  .paginationBttns a:hover {
+    color: white;
+    background-color: #ff9933;
+  }
+
+  .paginationActive a {
+    color: white;
+    background-color: #ff9933;
+  }
+
+  @media (max-width: 600px) {
+    .previousBttn,
+    .nextBttn {
+      display: none;
+    }
+  }
+`;
