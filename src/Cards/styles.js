@@ -62,6 +62,10 @@ export const Container = styled.div`
     border: 1px solid #ff9933;
     color: #ff9933;
     cursor: pointer;
+
+    @media (max-width: 600px){
+      margin: 4px;
+    }
   }
 
   .paginationBttns a:hover {

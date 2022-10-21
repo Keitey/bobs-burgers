@@ -11,7 +11,7 @@ const Card = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
-    fetch(`https://bobsburgers-api.herokuapp.com/characters?limit=60`)
+    fetch(`https://bobsburgers-api.herokuapp.com/characters/`)
       .then((res) => res.json())
       .then((data) => setCharacters(data));
   }, []);
