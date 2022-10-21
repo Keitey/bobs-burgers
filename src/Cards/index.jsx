@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Search from "../Search";
 import * as C from "./styles";
 
 import ReactPaginate from "react-paginate";
@@ -11,7 +10,7 @@ const Card = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
-    fetch(`https://bobsburgers-api.herokuapp.com/characters/`)
+    fetch(`https://bobsburgers-api.herokuapp.com/characters?&limit=60`)
       .then((res) => res.json())
       .then((data) => setCharacters(data));
   }, []);
@@ -54,10 +53,9 @@ const Card = () => {
 
   return (
     <C.Container>
-      <Search />
-      <h1 style={{ textAlign: "center", color: "#D77601" }}>
+      <h2>
         Bob's Burgers character
-      </h1>
+      </h2>
       <C.CardContainer>{currentPageData}</C.CardContainer>
       <ReactPaginate
         previousLabel="Prev"

@@ -43,6 +43,14 @@ export const Content = styled.div`
 `;
 
 export const Container = styled.div`
+
+  h2{
+    text-align: center;
+    color: #D77601;
+    padding-top: .9rem;
+    font-size: 35px;
+  }
+
   .paginationBttns {
     width: 80%;
     height: 40px;
@@ -63,18 +71,18 @@ export const Container = styled.div`
     color: #ff9933;
     cursor: pointer;
 
-    @media (max-width: 600px){
+    @media (max-width: 600px) {
       margin: 4px;
     }
   }
 
   .paginationBttns a:hover {
-    color: white;
+    color: #fff;
     background-color: #ff9933;
   }
 
   .paginationActive a {
-    color: white;
+    color: #fff;
     background-color: #ff9933;
   }
 
